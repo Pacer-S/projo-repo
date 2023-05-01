@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Shoe Gram</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="nav-links">
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="accesories">ACCESORIES</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="contact">CONTACT</a></li>
+    </ul>
+
+</div>
+<!-------- blog page content -------->
+    
+<section class="blog-content">
+    <div class="blog-left">
+        <img src="{% static 'images/sancho.png.png' %}">
+        <h2>Valuable products brought for your suit</h2>
+        <p>Being a newly put up football store, we work to make all players fancy the game they love. Football is a passion for which we work to embrace by making sure we give you the best products to make you play good and also look good in this sport we love.</p>
+        <br>
+        <p>You can now conveniently and safely buy your favorite shoes online! Simply browse through to see our wide selection of shoes, select the one that best that suits your style and we shall make sure you will look forward to playing the sport you love.Let’s navigate through the new normal together</p>
+        <br>
+        <p>Shoe gram.com is our top pick for online shoe stores because it provides an excellent all round service, while offering a good range of shoes at competitive prices. The website itself is easy to navigate, has excellent product photography, and offers loads of useful information on each product page.</p>
+
+        <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">Post Comment</button>
+            </form>
+        </div>
+        </div>
+    <div class="blog-right">
+        <h3>Our Accesories</h3>
+        <div>
+            <span>Football Boots</span>
+        </div>
+        <div>
+            <span>Football Trainers</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!----- Footer -------->
+<section class="Footer">
+    <h4>About Us</h4>
+    <p>You are all welcome to engage with us and make your careers the best you've ever had.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Me</p>
+</section>

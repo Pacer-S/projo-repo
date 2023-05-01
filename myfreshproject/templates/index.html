@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Shoe Gram</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="{% static 'images/future.png.png' %}"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="accesories">ACCESORIES</a></li>
+                    <li><a href="blog">BLOG</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                    {% if request.user.is_authenticated %}
+                    <li><a href="logout">LOG OUT</a></li>
+                    <li><a href="add_product">ADD PRODUCT</a></li>
+                    <li><a href="products">PRODUCT </a></li>
+                    {% else %}
+                    <li><a href="login"> LOG IN</a></li>
+                    <li><a href="signup">SIGN UP</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+        </nav>
+
+
+    <div class="text-box">
+        <h1>SHOEGRAM</h1>
+        <p>We have come up with the best football store to help out the players who put so much into this lovely sport.
+        </p>
+    </div>   
+        
+
+    </section>
+
+    <!------ Accesories ------->
+
+    <section class="Accesories">
+        <h1>Accesories we offer</h1>
+        <p>We have a wide range of accesories you can get to choose from.</p>
+
+        <div class="row">
+            <div class="Accesories-col">
+                <h3>Boots</h3>
+                <p>We get to offer a wide range of boots that you as a player will find suitable to improve your game. They come in different colours that you are able to choose from. We try to make sure that all players can be able to find our merchandise to be the best for their careers.</p>
+            </div>
+            <div class="Accesories-col">
+                <h3>Trainers</h3>
+                <p>We also have a variety of trainers that players will find favourble to improve their game. They come in different colours that you are able to choose from. We work to ensure that your careers will be in safe hands by providing you with the best products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----- Products ----->
+
+    <section class="Products">
+        <h1>Our Valued Products</h1>
+        <p>Promoting good partnership through marketing of our wide range of products.</p>
+
+        <div class="row">
+            <div class="Products-col">
+                <img src="{% static 'images/nike.png.jpg' %}">
+                <div class="layer">
+                    <h3>Nike</h3>
+                </div>
+            </div>
+            <div class="Products-col">
+                <img src="{% static 'images/adidas.png.webp' %}">
+                <div class="layer">
+                    <h3>Adidas</h3>
+                </div>
+            </div>
+            <div class="Products-col">
+                <img src="{% static 'images/predator.png.jpg' %}">
+                <div class="layer">
+                    <h3>Predator</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------- Image Hub -------->
+
+    <section class="ImageHub">
+        <h1>Wonderful products</h1>
+        <p>To show the best of our products.</p>
+
+        <div class="row">
+            <div class="ImageHub-col">
+                <img src="{% static 'images/messi.png.png' %}">
+                <div>
+                    <p>Some of our products being used. Gives you a feel of how our products look.</p>
+                    <h3>Messi...THE GOAT</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="ImageHub-col">
+                <img src="{% static 'images/puma.png.jpg' %}">
+                <div>
+                    <p>Some of our products being used. Gives you a feel of how our products look.</p>
+                    <h3>Neymar</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Call To Action -------->
+
+    <section class="cta">
+        <h1>Register to get these wonderful products</h1>
+        <a href="" class="hero-btn">CONTACT US></a>
+    </section>
+
+
+    <!----- Footer -------->
+    <section class="Footer">
+        <h4>About Us</h4>
+        <p>You are all welcome to engage with us and make your careers the best you've ever had.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Me</p>
+    </section>
+
+
+
+
+
+</body>
+</html>

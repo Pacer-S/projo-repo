@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Shoe Gram</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<div class="nav-links">
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="accesories">ACCESORIES</a></li>
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="contact">CONTACT</a></li>
+    </ul>
+
+</div>
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>The best football store in the world</h1>
+            <p>Working to make you have a great career you can even look back at.</p>
+            <a href="" class="hero-btn red-btn">SHOP NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="{% static 'images/black.png.png' %}">
+        </div>
+    </div>
+
+</section>
+

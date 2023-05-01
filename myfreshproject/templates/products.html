@@ -1,0 +1,42 @@
+<title>Products |</title>
+<header>
+  
+  <section class="header">
+    <style>
+      body{color-scheme: dark;}
+      div{text-align: center;}
+    </style>
+    <nav>
+     
+      <div class="nav-links">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="../about">ABOUT</a></li>
+          <li><a href="../accesories">ACCESORIES</a></li>
+          <li><a href="../blog">BLOG</a></li>
+          <li><a href="../contact">CONTACT</a></li>
+          {% if request.user.is_authenticated %}
+          <li><a href="../logout">LOG OUT</a></li>
+          <li><a href="../add_product">ADD PRODUCT</a></li>
+          <li><a href="../products">PRODUCT </a></li>
+          {% else %}
+          <li><a href="../login"> LOG IN</a></li>
+          <li><a href="../signup">SIGN UP</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </section>
+</head>
+{% for product in products %}
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" width="200" height="200" src="{{ product.image.url }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.product_name }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <p class="card-text">Price - {{ product.price }}</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+{% endfor %}
